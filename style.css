@@ -1,5 +1,5 @@
 html,body {
-    margin: 0;
+    margin: -0;
     font-family: 'arial', sans-serif;
     background: #c4c4c4;
 }
@@ -107,6 +107,8 @@ main {
 
 #devis img {
     display: flex;
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 .image p {
@@ -121,7 +123,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 107%;
+    width: 100%;
 }
 
 .im {
@@ -132,6 +134,7 @@ main {
     height: 40%;
     flex-direction: column;
     border-radius: 19px;
+    overflow: hidden;
 }
 
 .im div {
@@ -162,7 +165,7 @@ main {
 }
 
 .qualitecard {
-    background: #808080;
+    background: rgb(62 77 147);
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -245,7 +248,7 @@ footer div ul {
 }
 
 .button {
-    background: rgb(125 125 125);
+    background: rgb(62 77 147);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,6 +262,19 @@ footer div ul {
 }
 
 .buttonsmall {
+    background: rgb(62 77 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 4px 8px;
+    padding-right: 14px;
+    color:#ffffff;
+    white-space: nowrap;
+}
+.but {
     background: #6b6b6b;
     display: flex;
     justify-content: center;
